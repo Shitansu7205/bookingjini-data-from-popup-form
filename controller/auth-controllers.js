@@ -22,10 +22,10 @@ const bookingjini = async (req, res) => {
 
     // Setup email data
     let mailOptions = {
-        from: `"${data.name}" <${process.env.EMAIL}>`, // Sender address
-        to: 'shitansukumargochhayat@gmail.com ', // List of receivers
-        cc: 'abhilipsadas25433@gmail.com', // Optional: List of CC recipients
-        bcc: 'abhilipsadas25433@gmail.com', // Optional: List of BCC recipients
+        from: `"${data.fullname}" <${process.env.EMAIL}>`, // Sender address
+        to: 'bookingjinimarketing@gmail.com', // List of receivers
+        // cc: 'abhilipsadas25433@gmail.com', // Optional: List of CC recipients
+        bcc: 'sanjay008sahoo@gmail.com', // Optional: List of BCC recipients
         subject: 'New Enquiry From Website', // Subject line
         text: `You have a new Enquiry from your form submission:\n\nName: ${data.fullname}\nProperty Name: ${data.property}\nEmail: ${data.email}\nContact Number: ${data.phone}\nProperty Location: ${data.location}`, // Plain text body
         
