@@ -27,7 +27,7 @@ const bookingjini = async (req, res) => {
         cc: 'abhilipsadas25433@gmail.com', // Optional: List of CC recipients
         bcc: 'abhilipsadas25433@gmail.com', // Optional: List of BCC recipients
         subject: 'New Enquiry From Website', // Subject line
-        text: `You have a new Enquiry from your form submission:\n\nName: ${data.name}\nProperty Name: ${data.propertyname}\nEmail: ${data.email}\nContact Number: ${data.mob}\nProperty Location: ${data.location}`, // Plain text body
+        text: `You have a new Enquiry from your form submission:\n\nName: ${data.fullname}\nProperty Name: ${data.property}\nEmail: ${data.email}\nContact Number: ${data.phone}\nProperty Location: ${data.location}`, // Plain text body
         
     };
 
